@@ -1,0 +1,48 @@
+
+###
+POST http://localhost:8080/api/v1/books/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="001.jpg"
+
+< ./001.jpg
+--WebAppBoundary--
+
+###
+GET http://localhost:8080/api/v1/books/111
+Accept: application/json
+
+###
+GET http://localhost:8080/api/v1/books/all
+Accept: application/json
+
+###
+DELETE http://localhost:8080/api/v1/books/111
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/v1/books
+Content-Type: application/json
+
+{
+  "id": 111,
+  "title": "java"
+}
+
+###
+POST http://localhost:8080/api/v1/books/body
+Content-Type: application/json
+
+{
+  "id": 111,
+  "author": "crush",
+  "title": "html",
+  "content": "html",
+  "createTime": "2021-03-08 20:21:12"
+}
+
+
+
+
+
