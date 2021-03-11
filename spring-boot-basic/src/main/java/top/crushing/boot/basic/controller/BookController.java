@@ -94,7 +94,7 @@ public class BookController {
         return AjaxResponse.success(book1);
 
     }
-    @DeleteMapping("{id }")
+    @DeleteMapping("{id}")
     public AjaxResponse deleteBook(@PathVariable int id) {
         log.info("id" + id);
         return AjaxResponse.success();

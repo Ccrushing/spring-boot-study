@@ -14,10 +14,12 @@ import java.util.List;
  * @date 2021/3/9
  * @dercsiption Mother
  */
+@AllArgsConstructor
+@NoArgsConstructor
 @Component
 @Data
 @Builder
-@ConfigurationProperties(prefix = "family.mother")
+
 public class Mother {
     private  List<String> alias;
 }

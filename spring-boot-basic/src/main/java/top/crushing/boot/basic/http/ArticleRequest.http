@@ -39,7 +39,9 @@ Content-Type: application/json
   "author": "crush",
   "title": "html",
   "content": "html",
-  "createTime": "2021-03-08 20:21:12"
+  "createTime": "2021-03-08 20:21:12",
+  "readers": [{"name": "aaa","age": 18}],
+  "name": "crush"
 }
 
 
