@@ -18,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @Builder
-@JsonPropertyOrder(value = {"content","title"})
+//
 public class Book {
 
     private Integer id;

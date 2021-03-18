@@ -144,11 +144,9 @@ public class BookController {
         } catch (IOException e) {
             log.info(e.getMessage());
             AjaxResponse.failure("文件上传失败");
-
         }
         return AjaxResponse.success(fileName);
     }
-
 }
 
 
